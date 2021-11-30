@@ -1,91 +1,93 @@
 <template>
-  <div>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+  <div class="p-4 overflow-hidden">
+    <div class="example">
+      <h2 class="text-2xl font-bold font-header">Creative example 1</h2>
+      <div class="swiper mySwiper !overflow-visible">
+        <div class="swiper-wrapper">
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+        </div>
       </div>
     </div>
-    <div class="swiper mySwiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="example">
+      <h2 class="text-2xl font-bold font-header">Creative example 2</h2>
+      <div class="swiper mySwiper2 !overflow-visible">
+        <div class="swiper-wrapper">
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+        </div>
       </div>
     </div>
-    <div class="swiper mySwiper3">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="example">
+      <h2 class="text-2xl font-bold font-header">Creative example 3</h2>
+      <div class="swiper mySwiper3 !overflow-visible">
+        <div class="swiper-wrapper">
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+        </div>
       </div>
     </div>
-    <div class="swiper mySwiper4">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="example">
+      <h2 class="text-2xl font-bold font-header">Creative example 4</h2>
+      <div class="swiper mySwiper4 !overflow-visible">
+        <div class="swiper-wrapper">
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+        </div>
       </div>
     </div>
-    <div class="swiper mySwiper5">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="example">
+      <h2 class="text-2xl font-bold font-header">Creative example 5</h2>
+      <div class="swiper mySwiper5 !overflow-visible">
+        <div class="swiper-wrapper">
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+        </div>
       </div>
     </div>
-    <div class="swiper mySwiper6">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
-        <div class="swiper-slide">Slide 4</div>
-        <div class="swiper-slide">Slide 5</div>
-        <div class="swiper-slide">Slide 6</div>
-        <div class="swiper-slide">Slide 7</div>
-        <div class="swiper-slide">Slide 8</div>
-        <div class="swiper-slide">Slide 9</div>
+    <div class="example">
+      <h2 class="text-2xl font-bold font-header">Creative example 6</h2>
+      <div class="swiper mySwiper6 !overflow-visible">
+        <div class="swiper-wrapper">
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+          <Slide />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+const SLIDES_PER_VIEW = 1;
 export default {
   mounted() {
     var swiper = new Swiper(".mySwiper", {
       grabCursor: true,
+      slidersPerView: SLIDES_PER_VIEW,
       effect: "creative",
       creativeEffect: {
         prev: {
@@ -99,6 +101,7 @@ export default {
     });
     var swiper2 = new Swiper(".mySwiper2", {
       grabCursor: true,
+      slidersPerView: SLIDES_PER_VIEW,
       effect: "creative",
       creativeEffect: {
         prev: {
@@ -113,6 +116,7 @@ export default {
     });
     var swiper3 = new Swiper(".mySwiper3", {
       grabCursor: true,
+      slidersPerView: SLIDES_PER_VIEW,
       effect: "creative",
       creativeEffect: {
         prev: {
@@ -126,6 +130,7 @@ export default {
     });
     var swiper4 = new Swiper(".mySwiper4", {
       grabCursor: true,
+      slidersPerView: SLIDES_PER_VIEW,
       effect: "creative",
       creativeEffect: {
         prev: {
@@ -142,6 +147,7 @@ export default {
     });
     var swiper5 = new Swiper(".mySwiper5", {
       grabCursor: true,
+      slidersPerView: SLIDES_PER_VIEW,
       effect: "creative",
       creativeEffect: {
         prev: {
@@ -158,6 +164,7 @@ export default {
     });
     var swiper6 = new Swiper(".mySwiper6", {
       grabCursor: true,
+      slidersPerView: SLIDES_PER_VIEW,
       effect: "creative",
       creativeEffect: {
         prev: {
@@ -178,45 +185,15 @@ export default {
 </script>
 
 <style scoped>
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-.swiper {
+.example {
   margin: 100px auto;
-  width: 320px;
-  height: 240px;
 }
 
 .swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: #fff;
+  background-color: white;
 }
 
-.swiper-slide:nth-child(1n) {
+/* .swiper-slide:nth-child(1n) {
   background-color: rgb(206, 17, 17);
 }
 
@@ -254,5 +231,5 @@ body {
 
 .swiper-slide:nth-child(10n) {
   background-color: rgb(54, 94, 77);
-}
+} */
 </style>
