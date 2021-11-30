@@ -4,12 +4,11 @@
       <h2 class="text-2xl font-bold font-header">Creative example 1</h2>
       <div class="swiper mySwiper !overflow-visible">
         <div class="swiper-wrapper">
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
+          <Slide
+            v-for="index in 6"
+            :index="((index - 1) % 3) + 1"
+            :key="`slider1-${index}`"
+          />
         </div>
       </div>
     </div>
@@ -17,12 +16,11 @@
       <h2 class="text-2xl font-bold font-header">Creative example 2</h2>
       <div class="swiper mySwiper2 !overflow-visible">
         <div class="swiper-wrapper">
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
+          <Slide
+            v-for="index in 6"
+            :index="((index - 1) % 3) + 1"
+            :key="`slider2-${index}`"
+          />
         </div>
       </div>
     </div>
@@ -30,12 +28,11 @@
       <h2 class="text-2xl font-bold font-header">Creative example 3</h2>
       <div class="swiper mySwiper3 !overflow-visible">
         <div class="swiper-wrapper">
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
+          <Slide
+            v-for="index in 6"
+            :index="((index - 1) % 3) + 1"
+            :key="`slider3-${index}`"
+          />
         </div>
       </div>
     </div>
@@ -43,12 +40,11 @@
       <h2 class="text-2xl font-bold font-header">Creative example 4</h2>
       <div class="swiper mySwiper4 !overflow-visible">
         <div class="swiper-wrapper">
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
+          <Slide
+            v-for="index in 6"
+            :index="((index - 1) % 3) + 1"
+            :key="`slider4-${index}`"
+          />
         </div>
       </div>
     </div>
@@ -56,12 +52,11 @@
       <h2 class="text-2xl font-bold font-header">Creative example 5</h2>
       <div class="swiper mySwiper5 !overflow-visible">
         <div class="swiper-wrapper">
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
+          <Slide
+            v-for="index in 6"
+            :index="((index - 1) % 3) + 1"
+            :key="`slider5-${index}`"
+          />
         </div>
       </div>
     </div>
@@ -69,12 +64,11 @@
       <h2 class="text-2xl font-bold font-header">Creative example 6</h2>
       <div class="swiper mySwiper6 !overflow-visible">
         <div class="swiper-wrapper">
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
-          <Slide />
+          <Slide
+            v-for="index in 6"
+            :index="((index - 1) % 3) + 1"
+            :key="`slider6-${index}`"
+          />
         </div>
       </div>
     </div>
