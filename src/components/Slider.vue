@@ -2,9 +2,11 @@
   <div class="overflow-hidden">
     <div ref="sliderContainer" class="swiper !overflow-visible">
       <div class="swiper-wrapper">
-        <Slide />
-        <Slide />
-        <Slide />
+        <Slide
+          v-for="index in 5"
+          :index="((index - 1) % 3) + 1"
+          :key="`slider-${index}`"
+        />
       </div>
     </div>
   </div>
@@ -13,12 +15,10 @@
 <script>
 export default {
   mounted() {
-    console.log("refs", this.$refs);
     const swiper = new Swiper(this.$refs.sliderContainer, {
       slidesPerView: 1.1,
       spaceBetween: 10,
     });
-    console.log("swiper:", swiper);
   },
 };
 </script>
