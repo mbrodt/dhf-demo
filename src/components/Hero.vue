@@ -21,17 +21,17 @@
       </div>
       <div class="relative pl-4 pr-2">
         <div class="aspect-w-9 aspect-h-14">
-          <img ref="heroImage0" class="w-full h-full" src="hero.png" alt="" />
+          <img ref="heroImage0" class="w-full h-full" src="/hero.png" alt="" />
           <img
             ref="heroImage1"
             class="w-full h-full opacity-0"
-            src="team.png"
+            src="/team.png"
             alt=""
           />
           <img
             ref="heroImage2"
             class="w-full h-full opacity-0"
-            src="denmark.png"
+            src="/denmark.png"
             alt=""
           />
         </div>
