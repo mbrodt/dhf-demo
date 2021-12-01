@@ -25,19 +25,19 @@
       <div class="grid w-full grid-cols-2">
         <div class="flex items-center">
           <p class="mr-2 text-[10px] uppercase">Position</p>
-          <span class="text-red-600 uppercase font-header">Midt</span>
+          <span class="uppercase text-primary font-header">Midt</span>
         </div>
         <div class="flex items-center">
           <p class="mr-2 text-[10px] uppercase">Spiltype</p>
-          <span class="text-red-600 uppercase font-header">Begynder</span>
+          <span class="uppercase text-primary font-header">Begynder</span>
         </div>
         <div class="flex items-center">
           <p class="mr-2 text-[10px] uppercase">Varighed</p>
-          <span class="text-red-600 uppercase font-header">5 min.</span>
+          <span class="uppercase text-primary font-header">5 min.</span>
         </div>
         <div class="flex items-center">
           <p class="mr-2 text-[10px] uppercase">Niveau</p>
-          <span class="text-red-600 uppercase font-header">Begynder</span>
+          <span class="uppercase text-primary font-header">Begynder</span>
         </div>
       </div>
     </div>
@@ -71,4 +71,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.swiper-slide {
+  background-color: white;
+}
+</style>

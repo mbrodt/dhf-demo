@@ -1,9 +1,9 @@
 <template>
-  <div class="overflow-hidden">
+  <div class="px-4 overflow-hidden">
     <div ref="sliderContainer" class="swiper !overflow-visible">
       <div class="swiper-wrapper">
         <Slide
-          v-for="index in 5"
+          v-for="index in 6"
           :index="((index - 1) % 3) + 1"
           :key="`slider-${index}`"
         />
@@ -16,8 +16,19 @@
 export default {
   mounted() {
     const swiper = new Swiper(this.$refs.sliderContainer, {
-      slidesPerView: 1.1,
-      spaceBetween: 10,
+      slidesPerView: 1,
+      grabCursor: true,
+
+      effect: "creative",
+      creativeEffect: {
+        prev: {
+          shadow: true,
+          translate: ["-20%", 0, -200],
+        },
+        next: {
+          translate: ["100%", 0, 0],
+        },
+      },
     });
   },
 };
