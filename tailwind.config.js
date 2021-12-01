@@ -9,6 +9,9 @@ module.exports = {
         sans: ['"museo-sans"', ...defaultTheme.fontFamily.sans],
         header: '"Bebas Neue", cursive',
       },
+      colors: {
+        primary: "#E3001D",
+      },
     },
   },
   plugins: [
