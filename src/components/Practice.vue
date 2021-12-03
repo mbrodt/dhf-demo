@@ -2,7 +2,7 @@
   <div class="py-16">
     <div class="px-4">
       <div class="flex items-start font-header">
-        <h1 class="text-6xl">Øvelsesbank</h1>
+        <h1 class="text-6xl">Øvelsesbanken</h1>
         <span
           class="ml-1 text-2xl mt-1 leading-[1.4rem] border-b-4 border-primary"
           >02</span

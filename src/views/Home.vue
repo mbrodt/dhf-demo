@@ -1,6 +1,7 @@
 <template>
   <div>
-    <Hero />
+    <!-- <Hero /> -->
+    <HeroTest />
     <Practice />
   </div>
 </template>

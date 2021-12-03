@@ -22,7 +22,7 @@ export default {
       effect: "creative",
       creativeEffect: {
         prev: {
-          shadow: true,
+          // shadow: true,
           translate: ["-20%", 0, -200],
         },
         next: {
