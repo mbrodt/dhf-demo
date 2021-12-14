@@ -7,7 +7,7 @@
     "serve": "vite preview --port 3001"
   },
   "dependencies": {
-    "swiper": "^7.3.1",
+    "swiper": "^7.3.2",
     "vue": "^3.2.23",
     "vue-router": "^4.0.12"
   },
